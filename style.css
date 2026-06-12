@@ -12,13 +12,14 @@ body {
    background-color: hsl(179, 62%, 43%);
    color: white;
    width:50%; 
+   text-align:start;
    
 }
 #aboutDiv{
          background-color: hsl(179, 86%, 41%);
-    width:50%;
+        width:50%;
       border: solid 1px hsl(179, 62%, 43%);
-      content-align: center;
+       text-align:start;
     
 }
 #div1{
@@ -26,13 +27,13 @@ body {
     margin-bottom: 0px;
     color:grey;
     margin-bottom: 0px;
-      border: solid 1 white;
+      border: solid 1px white;
 
 }
 #div2{
 
     
-    margin-top: 0px;
+    margin-bottom: 0px;
     border: solid 1px hsl(179, 62%, 43%);
     
 }
@@ -54,11 +55,8 @@ body {
     border: none;
     border-radius: 5px;
     Border: none;
+}
 
-}
-p{
-    color: grey:
-}
 
 h2{
     color:hsl(179, 62%, 43%);
@@ -68,3 +66,16 @@ h2{
 h5{
     color: hsl(71, 73%, 54%);
 }
+
+@media (max-width: 600px) {
+    #div2 {
+     display: block;
+     width: 100%;
+    }
+
+ #priceDiv, #aboutDiv {
+            width: 100%;
+            margin-top: 0 auto;
+        }
+   
+    }
